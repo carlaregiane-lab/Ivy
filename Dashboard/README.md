@@ -5,7 +5,7 @@ de engenharia descrito pela pessoa usuária.
 
 ## Versão publicada
 
-- Endereço: https://ivy-engineering-command-center.vercel.app
+- Endereço: https://ivy-beta.vercel.app
 - Plataforma: Vercel
 - Framework: Next.js App Router
 - Acesso: público, sem login do ChatGPT
@@ -49,9 +49,9 @@ npm run lint
 A aplicação foi convertida do ambiente Sites/vinext para Next.js nativo e pode
 ser publicada diretamente na Vercel. O código do dashboard e da agente de IA
 está em https://github.com/carlaregiane-lab/Ivy, na pasta `Dashboard/`.
-O projeto da Vercel usa essa pasta como diretório raiz e `main` como branch
-de produção. Com a integração Git conectada, cada atualização enviada à branch
-principal inicia uma nova publicação automaticamente.
+O projeto `ivy` da equipe `evy4` na Vercel usa essa pasta como diretório raiz e
+`main` como branch de produção. A integração Git está conectada: cada atualização
+enviada à branch principal inicia uma nova publicação automaticamente.
 
 Para continuar em outro computador, leia [o guia de configuração](../docs/OTHER-COMPUTER.md).
 As instruções e o modelo da agente ficam em `lib/agents/ivy-agent.ts`; as

@@ -3,8 +3,8 @@
 Ivy's web interface, AI agent, engineering tools, and original Python assistant.
 
 - **Code:** https://github.com/carlaregiane-lab/Ivy
-- **Website:** https://ivy-engineering-command-center.vercel.app
-- **Vercel:** https://vercel.com/evy4/ivy-engineering-command-center
+- **Website:** https://ivy-beta.vercel.app
+- **Vercel:** https://vercel.com/evy4/ivy
 - **Continue on another computer:** [setup guide](docs/OTHER-COMPUTER.md)
 
 ## What to edit
@@ -46,9 +46,9 @@ The Python assistant has its own [instructions](Projeto/README.md).
 
 ## Publication and saved data
 
-The Vercel project must be connected to this repository, with production branch
-`main` and root directory `Dashboard`. Once linked, pushing to `main` starts a
-production build. Feature branches get preview deployments.
+The Vercel project `ivy` is connected to this repository, with production branch
+`main` and root directory `Dashboard`. Pushing to `main` starts a production
+build automatically. Feature branches get preview deployments.
 
 Git transfers code. Browser conversations and locally saved Python projects do
 not synchronize through GitHub or your ChatGPT account. Credentials, local

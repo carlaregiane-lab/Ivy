@@ -1,5 +1,16 @@
 # Continue working on Ivy from another computer
 
+## Connected services
+
+- Code: https://github.com/carlaregiane-lab/Ivy
+- Browser editor: https://github.dev/carlaregiane-lab/Ivy
+- Website: https://ivy-beta.vercel.app
+- Vercel project: https://vercel.com/evy4/ivy
+- Build root: `Dashboard`; production branch: `main`; Node.js: `24.x`.
+
+GitHub and Vercel are connected. Commits pushed to `main` automatically build
+and publish the website. Use a feature branch for a preview before production.
+
 ## One-time setup
 
 1. Install the ChatGPT/Codex desktop app and sign in with the same ChatGPT account.
@@ -26,15 +37,14 @@ GitHub, open the source file and choose Edit. Review and commit the change.
 For changes spanning multiple files, open https://github.dev/carlaregiane-lab/Ivy
 to browse and edit the repository, then commit and push from its Source Control
 panel. The browser editor does not run the app or its tests; use the local setup
-above or a Vercel preview to validate changes. Vercel's Git connection is needed
-for these commits to publish automatically.
+above or a Vercel preview to validate changes. These commits publish automatically through the connected Vercel project.
 
 ## Live AI on the development computer
 
 The web app uses Vercel AI Gateway, not the desktop ChatGPT login. The deployed
 website uses the Vercel project's authentication and environment settings.
 
-Vercel OIDC is enabled for the existing project. Ivy reads its trusted request
+Vercel OIDC is enabled for the Git-connected project `ivy`. Ivy reads its trusted request
 credential at runtime, so no Gateway key needs to be committed or copied between
 production deployments. At the transfer check on October 30, 2026, Vercel reached
 the Gateway but required account activation with a valid payment method before
@@ -47,7 +57,7 @@ To run with the existing Vercel configuration locally, run these commands from
 
 ```powershell
 npx vercel login
-npx vercel link --project ivy-engineering-command-center --scope evy4
+npx vercel link --project ivy --scope evy4
 npx vercel env pull .env.local --environment development --scope evy4
 npm run dev
 ```
@@ -93,7 +103,7 @@ the same workflow. Push completed work before switching computers. If you have
 unfinished changes on the other computer, save them to a branch and push that
 branch. Do not force-push to resolve a synchronization problem.
 
-Once Git integration is connected, pushes to `main` publish on Vercel; other
+Pushes to `main` publish on Vercel; other
 branches create previews. Check the Vercel build result before assuming a change
 is live. The build root must remain `Dashboard`, with framework `Next.js`.
 

@@ -23,7 +23,9 @@ Python assistant in `Projeto/`. Read each folder's README and applicable AGENTS.
 
 - Repository: https://github.com/carlaregiane-lab/Ivy
 - Production branch: `main`.
-- Existing Vercel project: `ivy-engineering-command-center`, team `evy4`.
+- Git-connected Vercel project: `ivy`, team `evy4`.
+- Website: https://ivy-beta.vercel.app
+- Vercel project ID: `prj_RZntc6EvkDHFeID8oePQYoBGdGm7`.
 - Vercel builds from `Dashboard/` using the Next.js framework.
 - Push only reviewed source and documentation. Never commit environment values,
   service authentication files, personal conversations or generated output.
