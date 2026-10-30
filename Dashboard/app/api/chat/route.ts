@@ -5,6 +5,7 @@ import {
 } from "ai";
 import { ivyAgent, type IvyAgentUIMessage } from "@/lib/agents/ivy-agent";
 import { createLocalIvyScenario } from "@/lib/local-test/local-ivy";
+import { hasGatewayAuthentication } from "@/lib/ai/gateway-auth";
 
 export const maxDuration = 60;
 
@@ -90,10 +91,6 @@ function streamErrorMessage(error: unknown) {
     return "O cérebro da Ivy está pronto, mas a conta da Vercel ainda precisa ser ativada para liberar as respostas de IA.";
   }
   return "A Ivy não conseguiu concluir esta resposta. Tente novamente em alguns instantes.";
-}
-
-function hasGatewayAuthentication() {
-  return Boolean(process.env.AI_GATEWAY_API_KEY?.trim() || process.env.VERCEL_OIDC_TOKEN?.trim());
 }
 
 function textFromMessage(message: unknown) {
