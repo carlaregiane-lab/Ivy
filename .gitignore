@@ -1,0 +1,43 @@
+# Only source folders and setup files belong in this repository.
+/*
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+!/README.md
+!/docs/
+!/Dashboard/
+!/Projeto/
+!/Executar Ivy.bat
+!/Executar Dashboard Ivy.bat
+
+# Credentials and computer-specific service links
+**/.env*
+!**/.env.example
+**/.vercel/
+**/.openai/
+**/*.pem
+**/*.key
+
+# Dependencies, caches and generated output
+**/node_modules/
+**/.next/
+**/.vinext/
+**/.wrangler/
+**/dist/
+**/build/
+**/out/
+**/outputs/
+**/work/
+**/coverage/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/.pytest_cache/
+**/*.tsbuildinfo
+**/*debug.log*
+**/.DS_Store
+**/Thumbs.db
+
+# Personal conversations, notes, projects and generated CAD
+/Projeto/data/

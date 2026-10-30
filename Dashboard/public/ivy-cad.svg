@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Exemplo CAD de uma garra robótica</title>
+  <desc id="desc">Planta técnica conceitual de uma garra de dois dedos com cotas de abertura de 40 e 90 milímetros.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#15211f" stroke-width="1"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1536" height="1024" fill="#070a0a"/>
+  <rect width="1536" height="1024" fill="url(#grid)"/>
+  <g fill="none" stroke="#b7c3c0" stroke-width="5">
+    <rect x="328" y="336" width="880" height="360" rx="20"/>
+    <rect x="424" y="410" width="688" height="212" rx="14" stroke="#66716e"/>
+    <path d="M484 412V270H606V486H484M930 412V270h122v216H930"/>
+    <path d="M606 518h324M768 410v212" stroke="#52605d" stroke-dasharray="16 12"/>
+    <circle cx="768" cy="516" r="64"/>
+    <circle cx="768" cy="516" r="18"/>
+  </g>
+  <g fill="none" stroke="#8be9e0" stroke-width="3" filter="url(#glow)">
+    <path d="M606 228h324M606 212v32M930 212v32"/>
+    <path d="M484 750h568M484 734v32M1052 734v32"/>
+    <path d="M1288 336v360M1272 336h32M1272 696h32"/>
+  </g>
+  <g fill="#8be9e0" font-family="ui-monospace, monospace" font-size="24" letter-spacing="3">
+    <text x="704" y="194">40 mm</text>
+    <text x="705" y="810">90 mm</text>
+    <text x="1328" y="528" transform="rotate(90 1328 528)">360 mm · EXEMPLO</text>
+  </g>
+  <g fill="#6f7b78" font-family="ui-monospace, monospace" font-size="18" letter-spacing="3">
+    <text x="72" y="84">IVY · CAD CONCEITUAL</text>
+    <text x="72" y="938">PRJ-001 · REFERÊNCIA VISUAL · NÃO FABRICAR</text>
+    <text x="1230" y="938">REV. 001</text>
+  </g>
+</svg>
