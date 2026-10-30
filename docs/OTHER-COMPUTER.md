@@ -19,10 +19,28 @@
 Signing in with the same ChatGPT account does not copy a local folder to the
 new computer. Clone this repository to get the code and development handoff.
 
+## Edit from a browser
+
+For a small change, open https://github.com/carlaregiane-lab/Ivy, sign in to
+GitHub, open the source file and choose Edit. Review and commit the change.
+For changes spanning multiple files, open https://github.dev/carlaregiane-lab/Ivy
+to browse and edit the repository, then commit and push from its Source Control
+panel. The browser editor does not run the app or its tests; use the local setup
+above or a Vercel preview to validate changes. Vercel's Git connection is needed
+for these commits to publish automatically.
+
 ## Live AI on the development computer
 
 The web app uses Vercel AI Gateway, not the desktop ChatGPT login. The deployed
 website uses the Vercel project's authentication and environment settings.
+
+Vercel OIDC is enabled for the existing project. Ivy reads its trusted request
+credential at runtime, so no Gateway key needs to be committed or copied between
+production deployments. At the transfer check on October 30, 2026, Vercel reached
+the Gateway but required account activation with a valid payment method before
+serving AI requests. Complete that step directly in the Vercel dashboard if the
+same activation message is still shown. Local engineering test mode and the
+website's interface can be used independently of that activation.
 
 To run with the existing Vercel configuration locally, run these commands from
 `Dashboard/` and complete Vercel's sign-in in your browser:

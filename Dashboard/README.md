@@ -47,10 +47,16 @@ npm run lint
 ## Publicação e atualizações
 
 A aplicação foi convertida do ambiente Sites/vinext para Next.js nativo e pode
-ser publicada diretamente na Vercel. A integração automática com GitHub será o
-próximo passo: depois que o repositório for criado e conectado ao projeto da
-Vercel, cada atualização enviada à branch principal iniciará uma nova
-publicação automaticamente.
+ser publicada diretamente na Vercel. O código do dashboard e da agente de IA
+está em https://github.com/carlaregiane-lab/Ivy, na pasta `Dashboard/`.
+O projeto da Vercel usa essa pasta como diretório raiz e `main` como branch
+de produção. Com a integração Git conectada, cada atualização enviada à branch
+principal inicia uma nova publicação automaticamente.
+
+Para continuar em outro computador, leia [o guia de configuração](../docs/OTHER-COMPUTER.md).
+As instruções e o modelo da agente ficam em `lib/agents/ivy-agent.ts`; as
+ferramentas ficam em `lib/tools/`. A memória do navegador e as credenciais não
+são transferidas pelo repositório.
 
 ## Limite de engenharia
 
